@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{# ここで「予約席」にイラストを流し込む #}
+{% block top_illustration %}
+<div class="center-illustration">
+    <img src="/static/images/girl_illustration.png" alt="Girl Illustration">
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="main-canvas">
+    {# ← ここにあった重複したイラストのコードを削除しました #}
+
+    <div class="post-list">
+        {% set sorted_posts = posts 
+          | selectattr("order", "defined") 
+          | sort(attribute="order") %}
+
+        {% for post in sorted_posts %}
+        <article class="post-card">
+            <div class="masking-tape"></div>
+            <h3 class="post-title">
+                <a href="/articles/{{ post.slug | replace('-top', '') }}-detail.html">{{ post.title }}</a>
+            </h3>
+
+            <div class="post-content-inner">
+                {% if post.post_image %}
+                <div class="post-thumbnail">
+                    <img src="{{ post.post_image }}" alt="Thumbnail">
+                </div>
+                {% endif %}
+
+                <div class="post-details-wrap">
+                    <ul class="post-details-list">
+                        {% for detail in post.details %}
+                        <li>{{ detail }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
