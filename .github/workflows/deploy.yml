@@ -22,7 +22,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install markdown jinja2
+        run: pip install markdown jinja2 python-frontmatter
 
       - name: Build site
         # srcフォルダに入って実行
