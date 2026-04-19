@@ -1,17 +1,34 @@
 {% extends "base.html" %}
 
-{% block title %}タグ一覧{% endblock %}
+{% block title %}Tags - 準備中{% endblock %}
 
 {% block content %}
-<h2 class="page-title">タグ一覧</h2>
-<ul class="tag-cloud">
-    {% for tag_name, posts in tags_map.items() %}
-    <li>
-        <a href="/tags/{{ tag_name }}.html">
-            #{{ tag_name }} <span>({{ posts|length }})</span>
-        </a>
-    </li>
-    {% endfor %}
-</ul>
-{% endblock %}
+<div class="main-canvas">
+    <div class="coming-soon-container" style="text-align: center; padding: 60px 20px;">
+        <div class="masking-tape" style="margin: 0 auto 20px;"></div>
+        
+        <h2 style="font-family: 'Zen Maru Gothic', sans-serif; color: #555;">
+            ただいま準備中です
+        </h2>
+        
+        <div class="coming-soon-illustration" style="margin: 30px 0;">
+            {# 既存のイラストを使い回すか、別の画像があれば指定してください #}
+            <img src="/programing_class_homepage/static/images/girl_illustration.png" 
+                 alt="Coming Soon" 
+                 style="width: 200px; opacity: 0.7; filter: grayscale(30%);">
+        </div>
 
+        <p style="line-height: 1.8; color: #777;">
+            タグ機能は、これから講座が増えていくのに合わせて<br>
+            使いやすく整理して公開する予定です。<br>
+            どうぞお楽しみに！
+        </p>
+
+        <div style="margin-top: 40px;">
+            <a href="/programing_class_homepage/index.html" class="back-to-home">
+                ← ホームに戻って講座を見る
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
