@@ -6,7 +6,7 @@ slug: "bangai-top"
 area: ""
 date: "2026-04-19"
 tags: ["OpenStreetMap", "フィールドワーク", "生成AI"]
-post_image: "/static/images/bangai.png"
+post_image: "static/images/bangai.png"
 details:
   - "いつもの街がもっと楽しくなる、お散歩マッピング☆*。"
   - "宝探し気分でデータを見つけて、世界中の地図に足し算"

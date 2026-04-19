@@ -6,7 +6,7 @@ area: ""
 slug: "high-top"
 date: "2026-04-19"
 tags: ["機械学習", "データ分析", "Python"]
-post_image: "/static/images/high.png"
+post_image: "static/images/high.png"
 details:
   - "Pythonと仲良くなって、AIの仕組みをのぞき見"
   - "☆*。データに隠された『正解』を読み解くトレーニング"

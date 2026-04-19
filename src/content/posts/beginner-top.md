@@ -6,7 +6,7 @@ slug: "beginner-top"
 area: ""
 date: "2026-04-19"
 tags: ["アプリ作成", "アルゴリズムの基礎", "IchigoJam"]
-post_image: "/static/images/beginner.png"
+post_image: "static/images/beginner.png"
 details:
   - "パソコンの立ち上げからサポート!₊˚ෆ⊹₊"
   - "コードを書かないアプリを作成!ノーコードレッスン"

@@ -6,7 +6,7 @@ area: ""
 slug: "middle-top"
 date: "2026-04-19"
 tags: ["HTML", "CSS", "Python", "データ活用", "API"]
-post_image: "/static/images/middle.png"
+post_image: "static/images/middle.png"
 details:
   - "HTMLとCSSで、自分らしいページをデザイン"
   - "地図データを使って、オリジナルマップ作り.｡◦♡"
