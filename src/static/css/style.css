@@ -248,10 +248,11 @@ body {
 }
 
 .post-details-list li {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin-bottom: 3px;
+        white-space: normal; /* nowrapからnormalに変更して改行を許可 */
+        overflow: visible;   /* はみ出しを隠さず表示 */
+        text-overflow: clip; /* ...を表示させない */
+        margin-bottom: 8px;  /* 改行したときに見やすいよう隙間を調整 */
+        line-height: 1.4;    /* 行間を少し整える */
     }
 
     .site-logo a {
