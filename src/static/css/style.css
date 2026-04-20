@@ -204,10 +204,11 @@ body {
     }
 
     .post-list {
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
         gap: 30px;
         margin-top: 2rem;
-        padding: 0 15px;
+        /* 左右のパディングを調整：右側(30px)を左側(15px)より広くして、全体を左に寄せる */
+        padding: 0 30px 0 15px; 
     }
 
     .site-header {
@@ -216,14 +217,21 @@ body {
     }
 
     .post-card {
-        transform: rotate(0deg) !important;
-        padding: 1.0rem 0.3rem !important;
+        /* カード自体を少し左に傾ける、または配置を微調整 */
+        margin-right: 10px;    /* カードの右側に外白を作って左に寄せる */
+        transform: rotate(-0.5deg) !important; /* 0度ではなく、ほんの少しだけ左に傾けると「左寄せ感」が強調されます */
+        padding: 1.2rem 0.5rem !important;
     }
 
     .post-content-inner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        /* リストなどのコンテンツも、中央ではなく「少し左」から始まるように */
+        align-items: flex-start; /* 中央寄せ(center)から左寄せ(flex-start)に変更 */
+        padding-left: 10px;      /* 左端に少しだけ余白 */
+    }
+
+    .post-details-list {
+        text-align: left;
+        margin: 0;               /* 中央寄せを解除 */
     }
 
     .post-thumbnail {
@@ -232,7 +240,7 @@ body {
         margin-bottom: 1rem;
     }
 
-    .post-details-list {
+    /* .post-details-list {
     font-size: 0.75rem;
     line-height: 1.5;
     padding: 0;
@@ -244,7 +252,7 @@ body {
     word-break: break-all;
     list-style: none; 
     width: 100%; 
-}
+} */
 
 .post-details-list li {
         white-space: nowrap;
