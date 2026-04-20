@@ -14,10 +14,10 @@
 }
 
 .center-illustration {
-    text-align: center;      /* 真ん中に寄せる */
-    margin-top: 10px;        /* ヘッダーとの隙間 */
-    margin-bottom: -220px;  /* 記事リストとの隙間を少し詰める（お好みで） */
-    position: relative;      /* 重なりの順序のために一応残す */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: -220px;
+    position: relative;
     z-index: 10;
     pointer-events: none;
     top: 300px;
@@ -169,10 +169,10 @@ body {
 }
 
 .post-details-list {
-    line-height: 1.4;          /* 行間をゆったりと */
-    margin-bottom: 0.2rem;    /* 項目ごとの隙間 */
-    padding-left: 1.0em;      /* 全体を右に寄せる */
-    word-break: break-all;    /* 日本語の改行を適切に */
+    line-height: 1.4;
+    margin-bottom: 0.2rem;
+    padding-left: 1.0em;
+    word-break: break-all;
 }
 
 .site-subtitle {
@@ -193,20 +193,16 @@ body {
     margin-top:-300px;
 }
 
-/* --- スマホ向けの調整（合体版） --- */
 @media (max-width: 768px) {
     body {
-        /* ほんのり方眼紙のような模様を背景に足す */
         background-image: radial-gradient(#e0ddd5 1px, transparent 1px);
         background-size: 20px 20px;
     }
 
-    /* 1. 中央の女の子を「削除（非表示）」 */
     .center-illustration {
         display: none;
     }
 
-    /* 2. 記事リスト：1列にして隙間を調整 */
     .post-list {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -214,20 +210,17 @@ body {
         padding: 0 15px;
     }
 
-    /* 3. ヘッダーの下に波線を引く */
     .site-header {
         border-bottom: 2px dotted #c9bbc6;
         margin-bottom: 2rem;
     }
 
-    /* 4. カードの調整 */
     .post-card {
         padding: 1.2rem 0.8rem;
         padding: 1.5rem 1rem;
-        transform: rotate(0deg) !important; /* 回転をリセット */
+        transform: rotate(0deg) !important;
     }
 
-    /* カード内の要素を縦に並べる */
     .post-content-inner {
         flex-direction: column;
         align-items: center;
@@ -242,22 +235,21 @@ body {
 
     .post-details-list {
     font-size: 0.8rem;
-    line-height: 1.3;          /* 行間をゆったりと */
-    margin-bottom: 0.2rem;    /* 項目ごとの隙間 */
+    line-height: 1.3;
+    margin-bottom: 0.2rem;
     padding-left: 0.5em;   
-    text-align: left;        /* 左揃えを維持 */
-    list-style-position: inside;   /* 全体を右に寄せる */
-    word-break: break-all;    /* 日本語の改行を適切に */
+    text-align: left;
+    list-style-position: inside;
+    word-break: break-all;
 }
 
 .post-details-list li {
-        white-space: nowrap;     /* 【重要】絶対に改行させない設定 */
-        overflow: hidden;        /* はみ出た場合は隠す（念のため） */
-        text-overflow: ellipsis; /* もし長すぎたら「...」にする */
-        margin-bottom: 3px;      /* 項目ごとの隙間 */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 3px;
     }
 
-    /* ロゴのサイズを少し小さく */
     .site-logo a {
         font-size: 2.2rem;
     }
