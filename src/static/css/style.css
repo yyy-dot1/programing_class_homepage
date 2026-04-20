@@ -207,7 +207,6 @@ body {
     grid-template-columns: 1fr;
         gap: 30px;
         margin-top: 2rem;
-        /* 左右のパディングを調整：右側(30px)を左側(15px)より広くして、全体を左に寄せる */
         padding: 0 30px 0 15px; 
     }
 
@@ -217,16 +216,14 @@ body {
     }
 
     .post-card {
-        /* カード自体を少し左に傾ける、または配置を微調整 */
-        margin-right: 10px;    /* カードの右側に外白を作って左に寄せる */
-        transform: rotate(-0.5deg) !important; /* 0度ではなく、ほんの少しだけ左に傾けると「左寄せ感」が強調されます */
+        margin-right: 10px;
+        transform: rotate(-0.5deg) !important;
         padding: 1.2rem 0.5rem !important;
     }
 
     .post-content-inner {
-        /* リストなどのコンテンツも、中央ではなく「少し左」から始まるように */
-        align-items: flex-start; /* 中央寄せ(center)から左寄せ(flex-start)に変更 */
-        padding-left: 10px;      /* 左端に少しだけ余白 */
+        align-items: flex-start;
+        padding-left: 10px;
     }
 
     .post-thumbnail {
@@ -254,7 +251,7 @@ body {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        margin-bottom: 3px;
+        /* margin-bottom: 3px; */
     }
 
     .site-logo a {
