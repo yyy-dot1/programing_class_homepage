@@ -202,24 +202,41 @@ body {
 
 /* --- スマホ向けの調整 --- */
 @media (max-width: 768px) {
-    /* イラストの位置調整（固定pxを減らす） */
+    /* 1. 中央の女の子を「削除（非表示）」 */
     .center-illustration {
-        top: 150px;         /* 300pxだと下に行きすぎるので半分に */
-        margin-bottom: -150px; 
+        display: none;      /* これで画面から消えます */
     }
 
-    /* 記事リスト：2段から1段へ、隙間を狭く */
+    /* 2. 記事リスト：2段から1段へ、隙間を狭く */
     .post-list {
         grid-template-columns: 1fr; /* 1列にする */
-        gap: 40px;                 /* 縦の隙間を適正に */
-        margin-top: -150px;        /* イラスト位置に合わせて調整 */
-        padding: 0 10px;           /* 左右の余白を少し確保 */
+        gap: 30px;                 /* 縦の隙間を適正に */
+        margin-top: 2rem;          /* イラストが消えた分、少し下げる */
+        padding: 0 15px;           /* 左右の余白を少し確保 */
     }
 
-    /* カードの回転を控えめにする（スマホだとズレが目立つため） */
+    /* 3. カードの調整 */
+    .post-card {
+        padding: 1.5rem 1rem;      /* スマホ用にカード内の余白を縮める */
+    }
+
+    /* カードの回転を 0 にして読みやすさを優先 */
     .post-card:nth-child(odd), 
     .post-card:nth-child(even) { 
         transform: rotate(0deg); 
+    }
+
+    /* カード内の要素（画像と文字）を縦に並べる */
+    .post-content-inner {
+        flex-direction: column;    /* 縦並び */
+        align-items: center;       /* 中央寄せ */
+        text-align: center;
+    }
+
+    .post-thumbnail {
+        flex: 0 0 auto;
+        width: 70px;               /* 画像を少し小さく */
+        margin-bottom: 1rem;       /* 文字との隙間 */
     }
 
     /* ロゴのサイズをスマホ用に少し小さく */
