@@ -217,7 +217,7 @@ body {
 
     .post-card {
         transform: rotate(0deg) !important;
-        padding: 1.2rem 0.5rem !important;
+        padding: 1.2rem 0.3rem !important;
     }
 
     .post-content-inner {
