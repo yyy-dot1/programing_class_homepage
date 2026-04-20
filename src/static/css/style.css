@@ -135,13 +135,6 @@ body {
     color: #8b7e74;
 }
 
-@media (max-width: 768px) {
-    .post-list {
-        grid-template-columns: 1fr;
-        margin-top: 2rem;
-    }
-}
-
 .post-content-inner {
     display: flex;
     align-items: flex-start;
