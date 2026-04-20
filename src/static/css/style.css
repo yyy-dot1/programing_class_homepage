@@ -199,3 +199,31 @@ body {
     z-index: 5;
     margin-top:-300px;
 }
+
+/* --- スマホ向けの調整 --- */
+@media (max-width: 768px) {
+    /* イラストの位置調整（固定pxを減らす） */
+    .center-illustration {
+        top: 150px;         /* 300pxだと下に行きすぎるので半分に */
+        margin-bottom: -150px; 
+    }
+
+    /* 記事リスト：2段から1段へ、隙間を狭く */
+    .post-list {
+        grid-template-columns: 1fr; /* 1列にする */
+        gap: 40px;                 /* 縦の隙間を適正に */
+        margin-top: -150px;        /* イラスト位置に合わせて調整 */
+        padding: 0 10px;           /* 左右の余白を少し確保 */
+    }
+
+    /* カードの回転を控えめにする（スマホだとズレが目立つため） */
+    .post-card:nth-child(odd), 
+    .post-card:nth-child(even) { 
+        transform: rotate(0deg); 
+    }
+
+    /* ロゴのサイズをスマホ用に少し小さく */
+    .site-logo a {
+        font-size: 2.2rem;
+    }
+}
