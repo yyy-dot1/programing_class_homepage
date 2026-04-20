@@ -234,7 +234,7 @@ body {
     }
 
     .post-details-list {
-    padding-right: 20px;
+    /* padding-right: 20px; */
     font-size: 0.75rem;
     line-height: 1.5;
     padding: 0;
