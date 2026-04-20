@@ -234,12 +234,13 @@ body {
     }
 
     .post-details-list {
+    padding-right: 10px;
     font-size: 0.75rem;
     line-height: 1.5;
     padding: 0;
     margin: 0;
     margin-bottom: 0.2rem;
-    padding-left: 0.5em;   
+    /* padding-left: 0.5em;    */
     text-align: left;
     list-style-position: inside;
     word-break: break-all;
