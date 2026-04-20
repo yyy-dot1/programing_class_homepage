@@ -219,6 +219,8 @@ body {
         transform: rotate(0deg) !important;
         padding: 1.2rem 0.5rem !important;
         margin-right: 10px;
+        position: static;
+        left: 0;
     }
 
     .post-content-inner {
