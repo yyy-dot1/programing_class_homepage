@@ -229,18 +229,14 @@ body {
         padding-left: 10px;      /* 左端に少しだけ余白 */
     }
 
-    .post-details-list {
-        text-align: left;
-        margin: 0;               /* 中央寄せを解除 */
-    }
-
     .post-thumbnail {
         flex: 0 0 auto;
         width: 70px;
         margin-bottom: 1rem;
     }
 
-    /* .post-details-list {
+    .post-details-list {
+    text-align: left;
     font-size: 0.75rem;
     line-height: 1.5;
     padding: 0;
@@ -252,7 +248,7 @@ body {
     word-break: break-all;
     list-style: none; 
     width: 100%; 
-} */
+}
 
 .post-details-list li {
         white-space: nowrap;
